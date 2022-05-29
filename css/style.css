@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* Giu nguyen kich thuoc width cua the khi them padding  */
+    box-sizing: border-box;
+}
+.clear {
+    clear: both;
+}
+body {
+    background: #faf4f2;
+}
+.header {
+    background: #f8e1d2;
+             /* t,b   r,l     */
+    padding: 10px 35px;
+}
+.header ul {
+    /* xoa dau tron den */
+    list-style: none;
+}
+.header a {
+    /*? xoa dau gach chan */
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+.header li {
+    display: inline;
+    margin: 10px;
+    padding: 15px;
+    /* border: 3px solid red; */
+}
+.header img {
+    padding-left: 23px;
+    padding-bottom: 18px;
+}
+
+.carousel {
+    background-image: url(../img/BG.png);
+    height: 700px;
+    /* chinh kich thuoc cua hinh nen: phu het khung cua the carousel */
+    background-size: cover;
+
+    /* vi tri uu tien hien thi cua hinh nen, mac dinh: top, left  */
+    background-position: center;
+}
+
+/* the nao can sap xep thi goi the do  */
+.activities__item {
+    float: left;
+    width: 25%;
+    /* margin:  0 10px; */
+    padding: 0 10px;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+.activities__background {
+    background: #fff;
+    /* border: 1px solid green; */
+    padding: 20px;
+    border-radius: 20px;
+}
+.activities__image img {
+    width: 100%;
+    border-radius: 20px;
+}
+.activities__info h3 {
+    padding-top: 25px;
+}
+.activities__info p {
+    margin: 15px auto;
+    padding-bottom: 25px;
+    width: 85%;
+}
+.activities__title h2, .activities__info p, .activities__info button, .contact__right h2, .contact__right h3, .contact__right p {
+    color: #525050be;
+}
+
+.activities__image {
+    position: relative;
+}
+.activities__icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    /* opacity: 0.5; */
+    height: 55px;
+    width: 55px;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* the a la loai inline, khong xet duoc kich thuoc => chuyen the a tu inline sang block  */
+    display: block;
+
+    /*? Giup can giua icon theo chieu ngang, ky thuat can giua icon so voi vien border ben ngoai */
+    /* text-align: center; */
+
+    /*? Can giua theo chieu doc  */
+    /* Khoang cach giua cac dong chu khac nhau  */
+    line-height: 70px;
+    border-radius: 15px;
+
+}
+.activities__icon i {
+    color: #e76f51;
+    font-size: 27px;
+
+    /* The i do FA da tao display block 
+    height: 40px;
+    width: 40px;
+    background-color: yellow; */
+}
+.activities__info button {
+    padding: 15px 35px;
+    border-radius: 50px;
+    border: 1px solid #e6e6e6;
+    background-color: #e6e6e6;
+    cursor: pointer;
+}
+.activities__info button:hover, .activities_viewAll button:hover {
+    border-color:#e76f51;
+    color: #e76f51
+}
+.activities__item button {
+    text-transform: capitalize;
+}
+.activities__title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+
+}
+.activities_viewAll button {
+    margin-top: 30px;
+    margin-bottom: 55px;
+    margin-left: 45%;
+    padding: 11px 50px;
+    border-radius: 50px;
+    border: 1px solid #eb0a0a;
+    background-color: #e6e6e600;
+    cursor: pointer;
+    color: red;
+    font-size: 18px;
+}
+.contact {
+    background-color: #f8e1db;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+.contact__left, .contact__right {
+    float: left;
+    width: 50%;
+    padding: 20px 60px;
+}
+.contact__left {
+    background: url(../img/mask.png);
+    background-size: cover;
+    background-position: center;
+}
+.contact__right {
+    padding-top: 70px;
+}
+.contact__right p {
+    margin: 12px 0 30px;
+}
+.contact__right h3 {
+    margin-bottom: 21px;
+}
+.contact__app, .contact__us {
+    float: left;
+    width: 50%;
+    /* border: 1px solid red; */
+}
+.contact__app {
+    width: 40%;
+}
+.contact__us i {
+    color: #e76f51;
+    font-size: 25px;
+    margin-right: 10px;
+}
+.footer {
+    background-color: #f8e1d2;
+    border-radius: 100px 100px 0 0;
+    padding: 100px 30px;
+    color: #3b3735;
+}
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 21px;
+}
+.footer__about {
+    float: left;
+    width: 40%;
+    line-height: 28px;
+    padding: 0 20px;
+}
+.footer__list {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+}
+.footer__nav {
+    float: left;
+    width: 33.33%;
+}
+.footer__nav li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+.footer__nav a {
+    text-decoration: none;
+    color: #3b3735;
+}
+.footer__copyrights {
+    text-align: center;
+    padding-top: 30px;
+}
